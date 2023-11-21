@@ -36,5 +36,3 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-
-git remote set-url origin https://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@github.com/sohailbritt/LochLandingui.git
