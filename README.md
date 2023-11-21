@@ -1,18 +1,18 @@
 # Getting Started with Create React App>
 
-<b>Loch Landing UI is responsive with mobile first approach.</b>
+<h3>Loch Landing UI is responsive with mobile first approach.</h3>
 
-<b>Loch web app is use react to build the application.</b>
+<h3>Loch web app is use react to build the application.</h3>
 
-<b>The testimonials should move on clicked and dragged now</b>
+<h3>The testimonials should move on clicked and dragged now</h3>
 
-<b> notification settings on the top of the page should auto-rotate on an
-infinite carousel this works too.</b>
-<b>The textbox component on the right is responsive on hover and click.</b>
-<b> email validate with custom alert message</b>.
-<b> click on SAVE BUTTON to be able to see sign up component</b>
-<b> When the user submits their email, they should be redirected to
-https://app.loch.one/welcome.</b>
+<h3> notification settings on the top of the page should auto-rotate on an
+infinite carousel this works too.</h3>
+<h3>The textbox component on the right is responsive on hover and click.</h3>
+<h3> email validate with custom alert message</h3>.
+<h3> click on SAVE BUTTON to be able to see sign up component</h3>
+<h3> When the user submits their email, they should be redirected to
+https://app.loch.one/welcome.</h3>
 
 we are not using backend or api calls in this app we mock the data in frintend itslef
 
@@ -34,3 +34,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+
+
+git remote set-url origin https://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@github.com/sohailbritt/LochLandingui.git
