@@ -1,4 +1,5 @@
 # Getting Started with Create React App>
+<h3> for modal popup im using react modal from npm </h3>
 
 <h3>Loch Landing UI is responsive with mobile first approach.</h3>
 
