@@ -1,0 +1,15 @@
+.input-text{
+box-sizing: border-box;
+width: 161.7px;
+height: 35px; 
+margin-left: 14px;
+outline: none;
+Padding-left: 11.2px;
+border: 0.7px solid #D4D4D4;
+font-size: 13px;
+font-family: Inter;
+font-weight: 500;
+line-height: 15.60px;
+word-wrap: break-word;
+border-radius: 5.6px;
+}

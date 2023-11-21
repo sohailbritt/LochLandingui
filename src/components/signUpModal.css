@@ -1,0 +1,85 @@
+.close-btn{
+    font-size: 26px;
+    font-weight: 700;
+    color:#c5c5c5;
+    margin-left: 95%;
+}
+.close-btn:hover{
+    cursor: pointer;
+    color:#c5c5c5;
+}
+.modalHeading {
+    Width: 326px;
+    Height: 94px;
+    margin-top: 30%;
+    margin-left: 150px;
+    color:#B0B1B3;
+}
+.modal-text{
+    width: 41.5%;
+    height: 43px;
+    margin-left: 24%;
+    border-radius: 8px;
+    border: 1px solid var(--grey-100, #E5E5E6);
+    background: #FFF;
+    outline: none;
+}
+::placeholder {
+    color: #CACBCC;
+    padding-left: 24px;
+    font-size: 14px;
+    font-family: Inter;
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12 -18 */
+    color: red;
+  }
+.alert {
+    color: red;
+    margin-left: 24%;
+}
+.modal-button{
+    margin-top: 2px;
+    width: 43% !important;
+    height: 50px !important;
+    margin-left: 24%;
+    border-radius: 8px;
+    border: 1px solid  #19191A;
+    background: #19191A !important;
+    color: #fff !important;
+}
+
+.modal-subtext {
+    margin-top: 24px;
+    margin-left: 22%;
+    font-size: 16px;
+    color: #19191A;
+}
+
+@media only screen and (max-width: 800px) {
+  .close-btn {
+    margin-left: 88%;
+  }
+  .modal-subtext {
+    margin-left: 18%;
+  }
+}
+
+@media only screen and (max-width: 556px) {
+    .modalHeading {
+        margin-top: 25%;
+        margin-left: 60px;
+    }
+    .modal-text{
+        margin-left: 10%;
+    }
+    .modal-button {
+        margin-left: 10%;
+    }
+    .modal-subtext{
+        margin-left: 5%;
+    }
+    .close-btn{
+        margin-left: 55%;
+    }
+}
