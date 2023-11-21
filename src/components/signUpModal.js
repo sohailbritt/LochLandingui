@@ -24,14 +24,11 @@ const SignUpModal = () => {
   const [showModal, setShowModal] = useState(true); 
   const [email, setEmail] = useState(''); 
   const [isValid, setIsValid] = useState(true);
-    
-    // const handleOpenModal = () => {
-    //     setShowModal(true);
-    // }
+  
     
     const handleCloseModal = () => {
         setShowModal(false);
-        navigate('/')
+        navigate('/');
     }
 
     const onChange = (e) => {

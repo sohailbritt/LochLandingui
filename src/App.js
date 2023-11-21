@@ -42,35 +42,21 @@ function App() {
     unified app`},
   ];
 
-  const [rotateValue, setRotateValue] = useState(window.screen.orientation.type)
-
-
-  window.addEventListener("orientationchange", (event) => {
-    const targetBell = document.querySelector('.Rotation_Bell');
-    targetBell.classList.add('rotatemode');
-
-    setTimeout(()=>{
-      targetBell.classList.remove('rotatemode');
-      console.log('removed')
-    }, 9000)
-  });
-
-  // useEffect(()=> {
-  //   console.log(window);
-  //   setRotateValue(window.screen.orientation.type)
-  //   const targetBell = document.querySelector('.Rotation_Bell');
-  //   if(rotateValue === 'landscape-primary' || rotateValue === 'landscape-secondary' || rotateValue === 'portrait-primary' || rotateValue === 'portrait-secondary'){
-  //     targetBell.classList.add('rotatemode');
-  //     console.log('rotate');
-  //   }
-    
-  // },[])
-  
-  //click and dragg
-  const slider = document.querySelector('.testimonial-flex');
+  const [modalOpen, setModalOpen] = useState(false);
   let isDown = false;
   let startX;
   let scrollLeft;
+  let slider = '';
+  useEffect(()=> {
+    // eslint-disable-next-line
+    slider = document.querySelector('.testimonial-flex');
+  },[modalOpen])
+  
+  //click and dragg
+  function onMouseEnter() {
+    slider.classList.add('active');
+    console.log('enter');
+  }
 
   function onMouseDown(e) {
     isDown = true;
@@ -91,25 +77,25 @@ function App() {
   };
 
   function onMouseMove(e){
-    slider.classList.add('active');
+    // slider.classList.add('active');
     if(!isDown) return;
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 3; //scroll-fast
+    const walk = (x - startX) ; //scroll-fast
     slider.scrollLeft = scrollLeft - walk;
     console.log(walk);
   };
 
   return (
     <>
-      <img className='Rotation_Bell' src={Bell} alt="Rotation Bell" />
+      <img className='Rotation_Bell rotatemode' src={Bell} alt="Rotation Bell" />
       <div className='hero_Section_1'>
         <div>
           <div className='hero1'>Get notified when a highly correlated <br/>whale makes a move</div>
           <p className='hero1_sub'>Find out when a certain whale moves <br/> more than any preset amount on-chain or when a dormant whale you care about becomes active.</p>
         </div>
         <div className='hero_Section1_sideScroll' >
-            <EmailNotificationCard />
+            <EmailNotificationCard setModalOpen={setModalOpen}/>
             <WalletNotification />
             <DormantWallet />
         </div>
@@ -135,6 +121,7 @@ function App() {
                 onMouseUp={(e)=>{onMouseUp ()}}
                 onMouseLeave={(e)=>{onMouseLeave ()}}
                 onMouseMove={(e)=>{onMouseMove (e)}}
+                onMouseEnter={(e)=>{onMouseEnter (e)}}
               >
                   <Testimonials data={TestimonialsData}/> 
             </div>

@@ -9,7 +9,7 @@
 
 }
 .rotatemode {
-    transform: rotate(360deg);
+    transform: rotate(720deg);
     transition: transform 6s;
 }
 .hero_Section_1{
@@ -181,6 +181,24 @@
     }
     
   }
+
+
+/* Portrait orientation */
+@media screen and (orientation: portrait) {
+    .rotatemode {
+        transform: rotate(720deg);
+        transition: transform 6s;
+    }
+}
+/* screen Oreintation */
+@media screen and (orientation: landscape) {
+    .rotatemode {
+        transform: rotate(360deg);
+        transition: transform 3s;
+    }
+}
+
+
 
 /* 08068075001 */
 /* 
